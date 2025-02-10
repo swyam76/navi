@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Proposal</title>
+    <style>
+        body {
+            font-family: 'Cursive', sans-serif;
+            background: url('r.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #800080;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(to right, #FFB6C1, #FF69B4);
+            color: white;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .container {
+            margin: 50px auto;
+            width: 80%;
+            background: rgba(255, 160, 190, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 105, 180, 0.7);
+        }
+        h2 {
+            font-size: 32px;
+            color: #FF69B4;
+        }
+        p {
+            font-size: 20px;
+            color: #800080;
+        }
+        .proposal-message {
+            font-size: 24px;
+            font-weight: bold;
+            color: #C71585;
+            margin: 30px 0;
+        }
+        .proposal-button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 20px;
+            color: white;
+            background-color: #FF69B4;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .proposal-button:hover {
+            background-color: #FF1493;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 80%;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 105, 180, 0.7);
+        }
+        .slides {
+            display: none;
+            width: 100%;
+            animation: slideIn 1.5s ease-in-out;
+        }
+        @keyframes slideIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background: linear-gradient(to right, #FF69B4, #FFB6C1);
+            color: white;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>💖 A Special Question for You 💖</header>
+    <div class="container">
+        <h2>From the first moment to forever...</h2>
+        <p>Every moment with you has been a dream come true. Now, let's make it official! 💍</p>
+        <div class="slideshow-container">
+            <img class="slides" src="pic1.jpg" alt="Beautiful Moment 1">
+            <img class="slides" src="pic2.jpg" alt="Beautiful Moment 2">
+            <img class="slides" src="pic3.jpg" alt="Beautiful Moment 3">
+        </div>
+        <p class="proposal-message">Will You Be Mine Forever? 💖</p>
+        <a href="yes.html" class="proposal-button">Yes, Forever! 💕</a>
+    </div>
+    <footer>
+        &copy; 2025 Digital Love Celebration | Designed with Love 💛
+    </footer>
+    <script>
+        let slideIndex = 0;
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000);
+        }
+        showSlides();
+    </script>
+</body>
+</html>

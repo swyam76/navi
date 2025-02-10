@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise Gift</title>
+    <style>
+        body {
+            font-family: 'Cursive', sans-serif;
+            background-color: #FFE4E1;
+            color: #800080;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(to right, #FFB6C1, #FF69B4);
+            color: white;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .container {
+            margin: 50px auto;
+            width: 80%;
+            background: rgba(255, 160, 190, 0.5);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 105, 180, 0.7);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h2 {
+            font-size: 32px;
+            color: #FF69B4;
+        }
+        p {
+            font-size: 20px;
+            color: #800080;
+        }
+        .gift-box {
+            margin-top: 30px;
+            width: 200px;
+            height: 200px;
+            background: #FF69B4;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        .gift-box:hover {
+            background: #FF1493;
+            transform: scale(1.1);
+        }
+        .hidden-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 22px;
+            color: #C71585;
+            font-weight: bold;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background: linear-gradient(to right, #FF69B4, #FFB6C1);
+            color: white;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>🎁 A Special Surprise for You 🎁</header>
+    <div class="container">
+        <h2>Because You Deserve All the Love and Happiness 💝</h2>
+        <p>Click on the surprise gift box to unveil your special message! 💖</p>
+        <div class="gift-box" onclick="showGift()">🎁 Open Me 🎁</div>
+        <p class="hidden-message" id="gift-message">This surprise will be revealed on 19 February 2025 at our special date! 💖✨</p>
+    </div>
+    <footer>
+        &copy; 2025 Digital Love Celebration | Designed with Love 💛
+    </footer>
+    <script>
+        function showGift() {
+            document.getElementById("gift-message").style.display = "block";
+        }
+    </script>
+</body>
+</html>
